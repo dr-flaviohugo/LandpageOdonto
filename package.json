@@ -11,8 +11,10 @@
     "serve": "npx serve@latest out"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.17",
     "autoprefixer": "^10.4.21",
     "next": "15.1.6",
+    "nodemailer": "^7.0.5",
     "react": "^18",
     "react-dom": "^18"
   },
