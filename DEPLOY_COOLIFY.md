@@ -13,25 +13,19 @@ Repository URL: https://github.com/dr-flaviohugo/LandpageOdonto.git
 Branch: main
 ```
 
-### 3. Configurar Build Settings
+### 3. Configurar Build Settings (Nixpacks)
 
-**Build Pack:** `Node.js`
+**Build Pack:** `Nixpacks` (auto-detecta Node.js)
 
-**Build Command:**
-```bash
-npm install && npm run build
-```
+**⚠️ IMPORTANTE:** Desmarque "Is it a Static site" para permitir API routes
 
-**Start Command:**
-```bash
-npx serve@latest out -p $PORT
-```
+**Build Command:** (deixe vazio para auto-detecção ou use `npm run build`)
 
-**Port:** `3000` (ou a porta que o Coolify configurar automaticamente)
+**Start Command:** (deixe vazio para auto-detecção ou use `npm start`)
+
+**Port:** `3000` (auto-detectado)
 
 **Root Directory:** `/` (raiz do projeto)
-
-**Output Directory:** `out`
 
 ### 4. Configurar Domínio
 
@@ -39,11 +33,17 @@ npx serve@latest out -p $PORT
 2. Adicionar domínio: `iosaodontologia.com.br`
 3. Habilitar SSL automático (Let's Encrypt)
 
-### 5. Variáveis de Ambiente (se necessário)
+### 5. Variáveis de Ambiente (OBRIGATÓRIO para API de contato)
 
 ```
 NODE_ENV=production
+EMAIL_USER=seu-email@gmail.com
+EMAIL_PASS=sua-senha-de-app-gmail
 ```
+
+**⚠️ IMPORTANTE:** 
+- Use uma senha de app do Gmail, não a senha normal
+- Configure estas variáveis na aba "Environment Variables" do Coolify
 
 ### 6. Advanced Settings (Opcionais)
 
@@ -98,17 +98,30 @@ npm run serve
 
 ## Troubleshooting
 
+### Problema: Erro 405 (Method Not Allowed) na API de contato
+**Causa:** Projeto configurado como "Static site" no Coolify
+**Solução:** 
+1. Desmarque "Is it a Static site" no Coolify
+2. Verifique se `output: "export"` foi removido do next.config.ts
+3. Faça redeploy do projeto
+
 ### Problema: Build falha
 **Solução:** Verificar se todas as dependências estão no package.json
 
 ### Problema: Site não carrega
-**Solução:** Verificar se a pasta `out` foi gerada corretamente no build
+**Solução:** Verificar se a pasta `.next` foi gerada corretamente no build
 
 ### Problema: SSL não funciona
 **Solução:** Verificar se o DNS está apontando corretamente para o VPS
 
 ### Problema: Imagens não carregam
 **Solução:** Verificar se `unoptimized: true` está no next.config.ts
+
+### Problema: Emails não são enviados
+**Solução:** 
+1. Verificar se as variáveis EMAIL_USER e EMAIL_PASS estão configuradas
+2. Usar senha de app do Gmail (não a senha normal)
+3. Verificar logs do container para erros específicos
 
 ## Otimizações Adicionais
 
