@@ -47,14 +47,21 @@ EMAIL_PASS=sua-senha-de-app-gmail
 
 ### 6. Advanced Settings (Opcionais)
 
-**Docker Settings:**
-- **Base Image:** `node:18-alpine`
-- **Build Arguments:** (deixar vazio)
+**Docker Settings (se usar Dockerfile em vez de Nixpacks):**
+- O Dockerfile foi atualizado para suportar API routes
+- Usa `output: "standalone"` para otimização
+- Executa com `node server.js` em vez de `serve`
 
 **Health Check:**
 - **Path:** `/`
 - **Method:** `GET`
 - **Expected Status:** `200`
+
+**Variáveis de Ambiente Adicionais para Dockerfile:**
+```
+HOSTNAME=0.0.0.0
+NEXT_TELEMETRY_DISABLED=1
+```
 
 ## Verificações Pós-Deploy
 
