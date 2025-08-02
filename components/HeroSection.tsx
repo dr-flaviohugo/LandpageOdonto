@@ -27,7 +27,7 @@ export default function HeroSection() {
       id="inicio" 
       className="min-h-screen bg-cover bg-center bg-no-repeat relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://readdy.ai/api/search-image?query=Modern%20luxurious%20dental%20clinic%20interior%20with%20neutral%20beige%20and%20gray%20tones%2C%20clean%20minimalist%20design%2C%20contemporary%20furniture%2C%20professional%20healthcare%20environment%20with%20warm%20lighting%20and%20elegant%20reception%20area&width=1920&height=1080&seq=hero-dental-new-1&orientation=landscape')`
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/hero/dental-clinic-hero.jpg')`
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-gray-900/30"></div>

@@ -9,25 +9,25 @@ export default function TestimonialsSection() {
     {
       name: 'Maria Silva',
       role: 'Paciente há 3 anos',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20a%20happy%20middle-aged%20Brazilian%20woman%20with%20a%20beautiful%20smile%2C%20neutral%20gray%20background%2C%20elegant%20natural%20lighting%2C%20confident%20and%20friendly%20expression%2C%20modern%20healthcare%20testimonial%20style&width=400&height=400&seq=testimonial-maria-new-1&orientation=squarish',
+      image: '/images/testimonials/maria-silva.jpg',
       text: 'Excelente atendimento! A Dra. Andrade é muito cuidadosa e sempre me deixa tranquila durante os procedimentos. Recomendo de olhos fechados!'
     },
     {
       name: 'João Santos',
       role: 'Paciente há 5 anos',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20a%20smiling%20Brazilian%20man%20in%20his%2040s%20showing%20healthy%20teeth%2C%20neutral%20gray%20background%2C%20contemporary%20natural%20lighting%2C%20confident%20expression%2C%20modern%20dental%20testimonial&width=400&height=400&seq=testimonial-joao-new-1&orientation=squarish',
+      image: '/images/testimonials/joao-santos.jpg',
       text: 'Fiz meu implante aqui e o resultado superou todas as expectativas. Equipe profissional e clínica com estrutura moderna. Muito satisfeito!'
     },
     {
       name: 'Ana Costa',
       role: 'Paciente há 2 anos',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20a%20young%20Brazilian%20woman%20with%20a%20radiant%20smile%2C%20contemporary%20neutral%20gray%20background%2C%20elegant%20natural%20lighting%2C%20happy%20and%20satisfied%20expression%2C%20modern%20dental%20testimonial&width=400&height=400&seq=testimonial-ana-new-1&orientation=squarish',
+      image: '/images/testimonials/ana-costa.jpg',
       text: 'Meu tratamento ortodôntico foi um sucesso! Adorei o resultado e todo o processo foi muito tranquilo. Equipe maravilhosa!'
     },
     {
       name: 'Carlos Oliveira',
       role: 'Paciente há 4 anos',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20a%20middle-aged%20Brazilian%20man%20with%20a%20confident%20smile%2C%20neutral%20gray%20background%2C%20contemporary%20natural%20lighting%2C%20satisfied%20dental%20patient%2C%20modern%20healthcare%20testimonial&width=400&height=400&seq=testimonial-carlos-new-1&orientation=squarish',
+      image: '/images/testimonials/carlos-oliveira.jpg',
       text: 'Clareamento dental ficou perfeito! Ambiente muito acolhedor e profissionais extremamente competentes. Indico para todos!'
     }
   ];
