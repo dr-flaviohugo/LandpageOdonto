@@ -18,7 +18,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <span className="text-2xl font-light text-gray-800 tracking-wide">ODONTO ANDRADE</span>
+            <span className="text-2xl font-light text-gray-800 tracking-wide">ODONTO ANDRADE TESTE</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
